@@ -5,6 +5,7 @@ import About from './components/About'
 import Portfolio from './components/Portfolio'
 import Design from './components/Design'
 import Testimonials from './components/Testimonials'
+import Furniture from './components/Furniture'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -23,8 +24,9 @@ export default function App(){
         <Hero />
         <About />
         <Portfolio />
-        <Design />
-        <Testimonials />
+  <Design />
+  <Furniture />
+  <Testimonials />
         <Contact />
       </main>
       <Footer />

@@ -10,11 +10,12 @@ export default function Navbar({dark, setDark}){
     <header className="fixed top-4 left-0 right-0 z-30 px-6 md:px-12">
       <nav className="max-w-6xl mx-auto flex items-center justify-between bg-white/60 dark:bg-warmblack/60 backdrop-blur rounded-full py-2 px-4 shadow-sm">
         <div className="flex items-center">
-          <a href="#hero" className="serif text-xl font-bold px-3">Decor by Name</a>
+          <a href="#hero" className="serif text-xl font-bold px-3">Samar'Art</a>
           <div className="hidden md:flex ml-6">
-            <NavLink href="#about">About</NavLink>
-            <NavLink href="#portfolio">Portfolio</NavLink>
-            <NavLink href="#design">Philosophy</NavLink>
+            <NavLink href="#about">À propos</NavLink>
+            <NavLink href="#portfolio">Projets</NavLink>
+            <NavLink href="#design">Philosophie</NavLink>
+            <NavLink href="#furniture">Notre mobilier</NavLink>
             <NavLink href="#contact">Contact</NavLink>
           </div>
         </div>
@@ -22,7 +23,7 @@ export default function Navbar({dark, setDark}){
           <button onClick={()=>setDark(!dark)} className="p-2 rounded-full hover:bg-black/5 transition mr-3">
             {dark ? <FiSun/> : <FiMoon/>}
           </button>
-          <a href="#contact" className="btn-ghost serif hidden md:inline">Book a Consultation</a>
+          <a href="#contact" className="btn-ghost serif hidden md:inline">Réserver une consultation</a>
         </div>
       </nav>
     </header>

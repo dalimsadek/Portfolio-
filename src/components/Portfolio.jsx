@@ -13,14 +13,14 @@ export default function Portfolio(){
   const [filter, setFilter] = useState('All')
   const [modal, setModal] = useState(null)
 
-  const categories = ['All','Residential','Commercial','Art Installations']
+  const categories = ['Tous','Résidentiel','Commercial','Installations artistiques']
   const projects = initialProjects.filter(p => filter==='All' ? true : p.category===filter)
 
   return (
     <section id="portfolio" className="py-20 bg-[linear-gradient(180deg,rgba(255,255,255,0.6),transparent)]">
       <div className="max-w-6xl mx-auto px-6">
-        <h3 className="serif text-2xl font-bold">Portfolio</h3>
-        <p className="mt-2 text-sm text-gray-600">Selected projects — hover to reveal details. Click to view larger.</p>
+  <h3 className="serif text-2xl font-bold">Projets</h3>
+  <p className="mt-2 text-sm text-gray-600">Projets sélectionnés — survolez pour les détails. Cliquez pour agrandir.</p>
 
         <div className="mt-6 flex flex-wrap gap-3">
           {categories.map(c => (

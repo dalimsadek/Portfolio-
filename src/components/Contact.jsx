@@ -58,16 +58,17 @@ export default function Contact(){
     <section id="contact" className="py-20">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8">
         <div>
-          <h4 className="serif text-2xl font-bold">Let's create something</h4>
-          <p className="mt-3 text-gray-600">Tell me about your project — timelines, spaces and a little about the life you imagine there.</p>
+          <h4 className="serif text-2xl font-bold">Créons ensemble</h4>
+          <p className="mt-3 text-gray-600">Parlez-moi de votre projet — délais, espaces et la vie que vous imaginez pour ce lieu.</p>
           <div className="mt-6 text-sm text-gray-700">
             <p>Email: <a href="mailto:Samarmsadekk@gmail.com" className="text-clay">Samarmsadekk@gmail.com</a></p>
-            <p>Phone: <a href="tel:+1234567890" className="text-clay">+1 (234) 567-890</a></p>
-            <p className="mt-4">Instagram: <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-clay">@decorator</a></p>
+            <p>Phone: <a href="tel:+33600000000" className="text-clay">+33 6 00 00 00 00</a></p>
+            <p className="mt-4">Instagram: <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-clay">@samar_art</a></p>
+            <p className="mt-2">Localisation: Remiremont, France</p>
           </div>
 
           <div className="mt-8">
-            <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373591531668!3d-37.816279779751864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f0f7b1b7%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus" width="100%" height="220" className="rounded-md border" loading="lazy" />
+            <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.123456789!2d6.444000!3d48.166000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1" width="100%" height="220" className="rounded-md border" loading="lazy" />
           </div>
         </div>
 

@@ -8,10 +8,10 @@ export default function About(){
           <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80" alt="portrait" className="w-full h-full object-cover" loading="lazy" />
         </div>
         <div>
-          <h2 className="serif text-3xl font-bold">Hello — I'm [Name],</h2>
-          <p className="mt-4 text-lg leading-relaxed">I design interiors that feel lived in, considered and quietly luxurious. I blend a modern sensibility with handcrafted materials — sourcing antiques, textiles and artisan finishes that anchor a room’s story. My work prioritizes light, texture and the emotional weight of objects.</p>
-          <blockquote className="mt-6 italic border-l-2 pl-4 text-clay">“We shape rooms not just to be seen, but to be felt.”</blockquote>
-          <p className="mt-6">I collaborate with clients who value longevity over trend, and who want spaces that welcome gatherings, rest and creative living.</p>
+          <h2 className="serif text-3xl font-bold">Bonjour — je suis Samar Msadek</h2>
+          <p className="mt-4 text-lg leading-relaxed">Je conçois des intérieurs qui donnent envie d’habiter, pensés et subtilement luxueux. J’allie une sensibilité contemporaine à des matériaux artisanaux — meubles chinés, textiles et finitions réalisés par des artisans. La lumière, la matière et l’équilibre sont au cœur de mon travail.</p>
+          <blockquote className="mt-6 italic border-l-2 pl-4 text-clay">« Nous façonnons des espaces qui se ressentent, pas seulement qui se regardent. »</blockquote>
+          <p className="mt-6">Je collabore avec des clients qui privilégient la longévité aux modes passagères et souhaitent des lieux pour accueillir, se reposer et créer.</p>
         </div>
       </div>
     </section>
