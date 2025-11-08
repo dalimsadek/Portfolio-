@@ -12,7 +12,8 @@
 
 html,body,#root{height:100%;}
 body{
-  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  /* Use DM Sans for body text (imported via Google Fonts), keep Inter as a UI fallback */
+  font-family: 'DM Sans', Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   background: linear-gradient(180deg, rgba(246,242,234,1) 0%, rgba(238,235,228,1) 100%);
 }
 
@@ -72,7 +73,9 @@ body::after{
 .serif { letter-spacing: -0.02em; }
 
 
-.serif { font-family: 'Playfair Display', serif; }
+.serif { font-family: 'Italiana', 'Playfair Display', serif; }
+.philosopher { font-family: 'Philosopher', sans-serif; }
+.dm { font-family: 'DM Sans', sans-serif; }
 .brand { color: var(--warmblack); }
 
 .section-divider{ height:1px; background: linear-gradient(90deg, transparent, rgba(0,0,0,0.06), transparent); }
