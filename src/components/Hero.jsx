@@ -6,7 +6,10 @@ export default function Hero(){
     <section id="hero" className="min-h-screen flex items-center" style={{paddingTop: '6rem'}}>
       <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}} className="w-full">
         <div className="relative h-[70vh] md:h-[85vh] max-w-6xl mx-auto rounded-2xl overflow-hidden shadow-lg">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1505692952047-5d5b09c7b3b6?auto=format&fit=crop&w=1800&q=80')] bg-cover bg-center transform-gpu scale-100" style={{filter:'brightness(0.82)'}}> </div>
+          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1505692952047-5d5b09c7b3b6?auto=format&fit=crop&w=1800&q=80')] bg-cover bg-center transform-gpu scale-100" style={{filter:'brightness(0.78)'}}> </div>
+
+          {/* color tint overlay — change the class to bg-clay/25 or bg-sage/30 or bg-warmblack/40 to adjust the section color */}
+          <div className="absolute inset-0 pointer-events-none bg-clay/25 mix-blend-multiply"></div>
 
           {/* subtle topographic lines SVG */}
           <div className="absolute inset-0 pointer-events-none hero-decor">
