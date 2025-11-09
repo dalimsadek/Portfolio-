@@ -26,12 +26,15 @@ export default function Hero(){
           </div>
 
           <div className="absolute inset-0 flex items-center justify-center px-6">
-            <div className="text-center max-w-3xl">
-              {/* use same tint as the overlay for a cohesive look; text switched to warmblack for contrast */}
-              <div className="inline-block bg-clay/25 backdrop-blur-sm px-6 py-6 md:px-10 md:py-8 rounded-xl">
-                <h1 className="serif text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight text-warmblack">Des espaces qui racontent une histoire — créés avec âme et équilibre.</h1>
-                <p className="mt-6 text-base md:text-xl lg:text-2xl text-warmblack/90 max-w-2xl mx-auto">Un mariage du minimalisme moderne et du savoir-faire artisanal. Intérieurs chaleureusement texturés, pensés pour durer.</p>
-                <a href="#portfolio" className="inline-block mt-8 bg-softgold text-warmblack py-3 px-6 rounded-full shadow hover:scale-105 transition">Voir mes projets</a>
+            <div className="text-center">
+              {/* smaller, elegant pill panel */}
+              <div className="inline-flex flex-col items-center gap-3 bg-white/6 backdrop-blur-md border border-white/10 px-6 py-4 md:px-8 md:py-6 rounded-3xl max-w-xl">
+                <h1 className="serif text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-ivory text-center">Des espaces qui racontent une histoire</h1>
+                <p className="mt-1 text-sm md:text-base text-ivory/90 max-w-lg text-center">Un mariage du minimalisme moderne et du savoir-faire artisanal — intérieurs chaleureusement texturés, pensés pour durer.</p>
+                <a href="#portfolio" className="mt-2 inline-flex items-center gap-3 text-sm md:text-base text-ivory/95 hover:text-softgold transition">
+                  <span>Faites défiler — plongez dans mon art</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5v14"/><path d="M19 12l-7 7-7-7"/></svg>
+                </a>
               </div>
             </div>
           </div>
