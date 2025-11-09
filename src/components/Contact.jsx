@@ -62,7 +62,7 @@ export default function Contact(){
           <p className="mt-3 text-gray-600">Parlez-moi de votre projet — délais, espaces et la vie que vous imaginez pour ce lieu.</p>
           <div className="mt-6 text-sm text-gray-700">
             <p>Email: <a href="mailto:Samarmsadekk@gmail.com" className="text-clay">Samarmsadekk@gmail.com</a></p>
-            <p>Phone: <a href="tel:+33600000000" className="text-clay">+33 6 00 00 00 00</a></p>
+            <p>Phone: <a href="tel:+33760755972" className="text-clay">+33 7 60 75 59 72</a></p>
             <p className="mt-4">Instagram: <a href="https://www.instagram.com/samarscorner/" target="_blank" rel="noreferrer" className="text-clay">@samarscorner</a></p>
             <p className="mt-2">Localisation: Remiremont, France</p>
           </div>

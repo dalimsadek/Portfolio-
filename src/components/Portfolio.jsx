@@ -3,11 +3,10 @@ import { motion } from 'framer-motion'
 import ProjectModal from './ProjectModal'
 
 const initialProjects = [
-  {id:1,title:'Sage Living Room',category:"Résidentiel",img:'https://images.unsplash.com/photo-1505692794406-6d6b4d92f1a6?auto=format&fit=crop&w=1200&q=80',desc:'Palette chaleureuse, textures superposées.'},
-  {id:2,title:'Studio Office',category:'Commercial',img:'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80',desc:'Lignes minimalistes et bois travaillé.'},
-  {id:3,title:'Kitchen Story',category:"Résidentiel",img:'https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=1200&q=80',desc:'Carreaux faits main et détails en laiton.'},
-  {id:4,title:'Gallery Installation',category:'Installations artistiques',img:'https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=80',desc:'Pièce textile in situ.'},
-  {id:5,title:'Cozy Reading Nook',category:"Résidentiel",img:'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80',desc:'Coin ensoleillé avec objets choisis.'}
+  {id:1,title:'Sage Living Room',category:"Résidentiel",img: import.meta.env.BASE_URL + 'image1.png',desc:'Palette chaleureuse, textures superposées.'},
+  {id:2,title:'Studio Office',category:"Résidentiel",img: import.meta.env.BASE_URL + 'Image2.png',desc:'Lignes minimalistes et bois travaillé.'},
+  {id:3,title:'Kitchen Story',category:"Commercial",img: import.meta.env.BASE_URL + 'image3.png',desc:'Carreaux faits main et détails en laiton.'},
+  {id:4,title:'Gallery Installation',category:'Commercial',img: import.meta.env.BASE_URL + 'image4.png',desc:'Pièce textile in situ.'},
 ]
 
 export default function Portfolio(){
@@ -31,15 +30,36 @@ export default function Portfolio(){
 
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {projects.map(p => (
-            <motion.div key={p.id} layout whileHover={{ scale: 1.02 }} className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer" onClick={()=>setModal(p)}>
-              <img src={p.img} alt={p.title} className="w-full h-56 object-cover transform group-hover:scale-105 transition" loading="lazy" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end">
-                <div className="p-4 text-white">
-                  <h4 className="font-semibold">{p.title}</h4>
-                  <p className="text-sm opacity-90">{p.desc}</p>
-                </div>
+            <motion.div
+              key={p.id}
+              layout
+              className="group card-fancy relative overflow-hidden rounded-lg shadow-lg cursor-pointer"
+              onClick={()=>setModal(p)}
+              whileHover={{ scale: 1.03, rotateX: 3, rotateY: -4 }}
+              transition={{ type: 'spring', stiffness: 220, damping: 18 }}
+            >
+              <div className="card-inner w-full h-56 overflow-hidden">
+                <img src={p.img} alt={p.title} className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                <div className="card-shine" aria-hidden></div>
               </div>
-              <div className="absolute top-3 left-3 bg-white/40 text-warmblack px-2 py-1 rounded text-xs">{p.category}</div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 16 }}
+                whileHover={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.35 }}
+                className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-4"
+              >
+                <div>
+                  <h4 className="font-semibold text-white drop-shadow">{p.title}</h4>
+                  <p className="text-sm text-white/90 mt-1">{p.desc}</p>
+                </div>
+              </motion.div>
+
+              <motion.div
+                className="absolute top-3 left-3 category-pill px-2 py-1 rounded text-xs text-warmblack"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.2 }}
+              >{p.category}</motion.div>
             </motion.div>
           ))}
         </div>

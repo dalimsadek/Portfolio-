@@ -10,7 +10,7 @@ export default function Footer(){
           <a href="#" className="text-clay"><FaPinterest/></a>
           <a href="#" className="text-clay"><FaBehance/></a>
         </div>
-        <p className="mt-4 text-sm text-gray-600">© {new Date().getFullYear()} Decor by Name — All rights reserved.</p>
+  <p className="mt-4 text-sm text-gray-600">© {new Date().getFullYear()} Smar'Art — All rights reserved.</p>
         <p className="mt-2 signature">crafted by hand ✦</p>
       </div>
     </footer>
